@@ -100,7 +100,7 @@ public class SwaggerConfig {
                 "",
                 ApiKeyVehicle.HEADER,
                 "api_key",
-                "," );
+                ",");
     }
 
     @Bean

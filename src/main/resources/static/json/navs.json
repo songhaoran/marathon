@@ -1,0 +1,73 @@
+{
+  "contentManagement": [
+    {
+      "title": "文章列表",
+      "icon": "&#xe705;",
+      "href": "/back/article/page",
+      "spread": false
+    },
+    {
+      "title": "爬虫列表",
+      "icon": "&#xe657;",
+      "href": "/ultron/snatch/list?page_num=1&page_size=10",
+      "spread": false
+    },
+    {
+      "title": "其他页面",
+      "icon": "&#xe630;",
+      "href": "",
+      "spread": false,
+      "children": [
+        {
+          "title": "404页面",
+          "icon": "&#xe61c;",
+          "href": "templates/404.ftl",
+          "spread": false
+        },
+        {
+          "title": "登录",
+          "icon": "&#xe609;",
+          "href": "templates/login/login.ftl",
+          "spread": false,
+          "target": "_blank"
+        }
+      ]
+    }
+  ],
+  "memberCenter": [
+    {
+      "title": "用户中心",
+      "icon": "&#xe612;",
+      "href": "templates/user/userList.ftl",
+      "spread": false
+    },
+    {
+      "title": "会员等级",
+      "icon": "icon-vip",
+      "href": "templates/user/userGrade.ftl",
+      "spread": false
+    }
+  ],
+  "seraphApi": [
+    {
+      "title": "三级联动模块",
+      "icon": "icon-mokuai",
+      "href": "templates/doc/addressDoc.ftl",
+      "spread": false
+    },
+    {
+      "title": "bodyTab模块",
+      "icon": "icon-mokuai",
+      "href": "templates/doc/bodyTabDoc.ftl",
+      "spread": false
+    },
+    {
+      "title": "三级菜单",
+      "icon": "icon-mokuai",
+      "href": "templates/doc/navDoc.ftl",
+      "spread": false
+    }
+  ]
+}
+
+

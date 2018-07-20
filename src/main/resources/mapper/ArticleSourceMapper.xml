@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.song.dao.ArticleSourceMapper">
+    <select id="listByQuery" parameterType="com.song.query.ArticleSourceQuery"
+            resultType="com.song.bean.table.ArticleSource">
+        SELECT *
+        FROM article_source
+        <where>
+            1=1
+            <if test="sourceType!=null">
+                AND source_type=#{sourceType}
+            </if>
+            <if test="sourceType!=null">
+                AND is_active=#{isActive}
+            </if>
+        </where>
+        ORDER BY created_at asc
+
+    </select>
+</mapper>
