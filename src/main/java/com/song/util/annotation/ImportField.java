@@ -15,6 +15,7 @@ import java.lang.annotation.Target;
 public @interface ImportField {
     int DEFAULT_COLUMN = 0;
     String DATE_PATTERN_1 = "yyyyMMdd";
+    String DATE_PATTERN_2 = "yyyy-MM-dd";
 
     int column() default DEFAULT_COLUMN;
 

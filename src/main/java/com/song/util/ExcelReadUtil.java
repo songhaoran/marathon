@@ -128,7 +128,7 @@ public class ExcelReadUtil<T> {
             return new ArrayList<>();
         }
 
-        Map<Integer, List<Field>> column2FieldMap = getRow2FieldMap(clazz);
+        Map<Integer, List<Field>> column2FieldMap = this.getRow2FieldMap(clazz);
         List<T> list = new ArrayList<>();
         for (String[] values : excelValueList) {
             T t = (T) clazz.newInstance();
@@ -176,7 +176,7 @@ public class ExcelReadUtil<T> {
         return list;
     }
 
-    public static Map<Integer, List<Field>> getRow2FieldMap(Class clazz) {
+    private Map<Integer, List<Field>> getRow2FieldMap(Class clazz) {
         Map<Integer, List<Field>> rowNum2FieldMap = new HashMap<>();
         Field[] fields = clazz.getDeclaredFields();
         for (int i = 0; i < fields.length; i++) {
